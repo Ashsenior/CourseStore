@@ -28,7 +28,7 @@ then open this project and open a new terminal
 
 then `pip install django djangorestframework`
 
-then `cd frontend` then `npm install` then `npm run start`
+then `cd frontend` then `npm install` then `npm run dev`
 
 then open another terminal **in the main project directory** 
 
