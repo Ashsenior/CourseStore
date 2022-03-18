@@ -1,0 +1,23 @@
+input[type=file]::file-selector-button {
+    cursor: grab;
+    background-color: black;
+    font-size: 1.0em;
+    padding: 2%;
+    border-radius: 5px;
+    color: white;
+}
+
+.auth-div {
+  top: 58%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  background-color: white;
+  padding: 2%;
+  max-width: 300px;
+  min-height: 350px;
+}
+
+.but{
+  background-color: rgb(6, 36, 63);
+}
