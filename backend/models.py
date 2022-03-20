@@ -15,6 +15,7 @@ class University(models.Model):
     logo = models.ImageField(upload_to=upload_to)
     website = models.CharField(max_length=250,default="none")
     email = models.EmailField(null=False,default="default@gmail.com")
+    verified = models.BooleanField(default=False)
 
     def __str__(self): 
         return self.name
@@ -31,9 +32,11 @@ class Member(AbstractUser):
 class Project(models.Model):
     name = models.CharField(max_length=200, unique=True)
     brief = models.TextField(max_length=2000)
+    university = models.ForeignKey(University, on_delete=models.CASCADE,null=True)
     mentor = models.ForeignKey(Member, on_delete=models.SET_NULL, null=True)
     resource = models.CharField(max_length=200)
     members = models.ManyToManyField(Member,related_name="projects")
+    verified = models.BooleanField(default=False)
 
     def __str__(self): 
         return self.name

@@ -27,7 +27,7 @@ export default function MemberForm(){
 
     useEffect(() => {
         const getUniversities = () => {
-            const url = 'http://localhost:8000/backend/add-university/'
+            const url = 'http://localhost:8000/backend/add-university/';
             axios.get(url)
                 .then((response) => {
                     setUniversities(response.data);
