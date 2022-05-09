@@ -1,4 +1,4 @@
-# SIH'2022 Project {UniProjects}
+# CourseStore
 
 ### Setting up repo and git bash
 first **fork this repositry**
