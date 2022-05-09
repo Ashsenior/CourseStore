@@ -9,11 +9,11 @@ then `git init`
 
 then `git clone https://github.com/<username>/CourseStore`
 
+then `cd CourseStore`
+
 then `git checkout -b <branchname>/<feature/bug>`
 
 then `git remote add upstream https://github.com/Ashsenior/CourseStore.git`
-
-then `git remote add origin https://github.com/<username>/CourseStore.git`
 
 then **start making changes and make frequent commits**
 
